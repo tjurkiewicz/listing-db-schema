@@ -19,7 +19,7 @@ depends_on = None
 def upgrade():
     alembic.op.create_table(
         'listing',
-        sqlalchemy.Column('id', sqlalchemy.Sequence, primary_key=True),
+        sqlalchemy.Column('id', sqlalchemy.Integer, primary_key=True),
         sqlalchemy.Column('listing_id', sqlalchemy.Integer),
         sqlalchemy.Column('last_update', sqlalchemy.DateTime),
         sqlalchemy.Column('city', sqlalchemy.String(length=64))
