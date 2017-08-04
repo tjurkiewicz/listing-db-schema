@@ -103,3 +103,5 @@ ENV/
 # Idea
 .idea
 
+# Alembic
+alembic.ini
