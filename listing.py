@@ -9,5 +9,5 @@ class Listing(Base):
 
     id = sqlalchemy.Column(sqlalchemy.Sequence, primary_key=True)
     listing_id = sqlalchemy.Column(sqlalchemy.Integer)
-    last_update = sqlalchemy.Column(sqlalchemy.TIMESTAMP)
+    last_update = sqlalchemy.Column(sqlalchemy.TIMESTAMP(timezone=True))
     city = sqlalchemy.Column(sqlalchemy.String(length=64))

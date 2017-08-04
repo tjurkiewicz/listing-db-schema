@@ -21,7 +21,7 @@ def upgrade():
         'listing',
         sqlalchemy.Column('id', sqlalchemy.Integer, primary_key=True),
         sqlalchemy.Column('listing_id', sqlalchemy.Integer),
-        sqlalchemy.Column('last_update', sqlalchemy.TIMESTAMP),
+        sqlalchemy.Column('last_update', sqlalchemy.TIMESTAMP(timezone=True)),
         sqlalchemy.Column('city', sqlalchemy.String(length=64))
     )
 
